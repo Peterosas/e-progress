@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block content %}
+{%include 'includes/navbar.html' %}
+
+{% load static %}
+
+<div class="content mt-4">
+  <h5 class="text-center">Quick Menu</h5>
+  <div class="grid-container mt-4">
+  
+    <div class="grid-item bg-blue-100">
+      <div class="icon-container">
+        <i class="fas fa-print"></i>
+      </div>
+      <span>Print Results</span>
+    </div>
+    <div class="grid-item bg-pink-100">
+      <div class="icon-container">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <span>My Courses</span>
+    </div>
+    <div class="grid-item bg-green-100">
+      <div class="icon-container">
+        <i class="fas fa-school"></i>
+      </div>
+      <span>My School Info</span>
+    </div>
+    <div class="grid-item bg-yellow-100">
+      <div class="icon-container">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <span>Clearance Status</span>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid-item bg-pink-100">
+      <div class="icon-container">
+        <i class="fas fa-newspaper"></i>
+      </div>
+      <span>News Feed</span>
+    </div>
+    <div class="grid-item bg-blue-100">
+      <div class="icon-container">
+        <i class="fas fa-calendar-day"></i>
+      </div>
+      <span>Exam Timetable</span>
+    </div>
+    <div class="grid-item bg-green-100">
+      <div class="icon-container">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <span>Settings</span>
+    </div>
+    <div class="grid-item bg-yellow-100">
+      <div class="icon-container">
+        <i class="fas fa-sign-out-alt"></i> 
+      </div>
+      <span>Logout</span>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

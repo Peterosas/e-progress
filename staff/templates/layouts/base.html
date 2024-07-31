@@ -1,0 +1,33 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/img/apple-icon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <title>
+        ISMS
+    </title>
+    {% include 'includes/styles.html' %}
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is an easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA, and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="g-sidenav-show">
+    {% block sidebar %}{% endblock %}
+    <div class="container">
+        <main class="main-content">
+            {% block content %}{% endblock %}
+        </main>
+        {%include 'includes/footer.html' %}
+    </div>
+    
+    {%include 'includes/scripts.html' %}
+</body>
+</html>

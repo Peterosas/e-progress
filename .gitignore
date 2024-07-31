@@ -1,0 +1,76 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django Stuff
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.db-journal
+
+# Environment variables
+.env
+
+# Django migrations
+*/migrations/*
+
+# Static files
+static/
+media/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+venv/
+env/
+ENV/
+.env/
+
+# Pyenv
+.python-version
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Coverage reports
+coverage/
+*.cover
+*.py,cover
+*.cobertura.xml
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.tav
+*.egg
+*.egg-info
+
+# MyPy
+.mypy_cache/
+
+# Local virtual environment
+venv/
+env/
+ENV/
+
+# Pyre type checker
+.pyre/
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+*.spec
