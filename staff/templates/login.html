@@ -1,19 +1,30 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
+
 {% include 'includes/navbar.html' %}
 
 {% load static %}
 
+
 <div class="spiral-wrapper">
   <div class="login-form-container">
-    <form action="/portal/overview/">
+    <div class="text-center">
+      <h5>Welcome back!</h5>
+      <p>Please sign in to continue.</p>
+    </div>
+
+    <form 
+      class="mt-4" action="/portal/overview/" 
+      x-data="{ loading: false }"  
+      @submit.prevent="loading = true; setTimeout(() => { loading = false; location.href='/portal/dashboard/overview/' }, 3000)"
+    >
       <div class="form-group">
         <label for="token">Enter your student token:</label>
         <input type="password" class="form-control" id="token" placeholder="Enter token">
       </div>
-      <p class="instruction-text">Need help? Contact the school if you haven't received your token.</p>
-      <button type="submit" class="btn btn-secondary">Log In</button>
+      <p class="instruction-text mb-4">Need help? Contact the school if you haven't received your token.</p>
+      <button type="submit" class="btn btn-secondary" x-html="loading? 'Authenticating...' : 'Login In'"></button>
     </form>
   </div>
 </div>

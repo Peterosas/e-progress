@@ -19,10 +19,10 @@
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
 </head>
 
-<body class="g-sidenav-show">
+<body class="g-sidenav-show" x-data>
     {% block sidebar %}{% endblock %}
     <div class="container">
-        <main class="main-content">
+        <main class="inner-container">
             {% block content %}{% endblock %}
         </main>
         {%include 'includes/footer.html' %}
