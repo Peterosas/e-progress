@@ -11,3 +11,6 @@ def PrintResults(request):
 
 def MyProfile(request):
     return render(request, 'profile.html')
+
+def MyCourses(request):
+    return render(request, 'courses.html')
