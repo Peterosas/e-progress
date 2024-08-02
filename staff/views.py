@@ -8,3 +8,6 @@ def DashboardOverview(request):
 
 def PrintResults(request):
     return render(request, 'print_results.html')
+
+def MyProfile(request):
+    return render(request, 'profile.html')

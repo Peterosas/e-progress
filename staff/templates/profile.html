@@ -1,0 +1,84 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+{% include 'includes/navbar.html' %}
+
+{% load static %}
+
+<div class="mt-4 d-flex">
+    {% include 'includes/sidebar.html' %}
+
+    <div class="px-4 py-3 flex-grow-1">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-start mb-4">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-0">Academic Profile</h4>
+                    </div>
+                    <img src="https://via.placeholder.com/100" alt="Profile Photo" class="profile-photo ml-3">
+                </div>
+
+                <!-- Student Information Section -->
+                <div class="mb-4">
+                    <h6 class="title border-bottom-gray">Student Information</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="title">Surname</h6>
+                            <p class="text-muted">Erhunmwunse</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Other Names</h6>
+                            <p class="text-muted">Eghosa Peter</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Sex</h6>
+                            <p class="text-muted">Male</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Matriculation Number</h6>
+                            <p class="text-muted">U2018/3020083</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Degree Type</h6>
+                            <p class="text-muted">Under-graduate</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Program Type</h6>
+                            <p class="text-muted">Full-Time</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Academic Session</h6>
+                            <p class="text-muted">2018/2019</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Study Year</h6>
+                            <p class="text-muted">5</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Course of Study</h6>
+                            <p class="text-muted">Electronic & Computer Engineering</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School Information Section -->
+                <div>
+                    <h6 class="title border-bottom-gray">School Information</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="title">Faculty</h6>
+                            <p class="text-muted">Engineering</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="title">Department</h6>
+                            <p class="text-muted">Electronic & Computer Engineering</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
