@@ -9,23 +9,23 @@
 <div class="content mt-6">
   <h5>What would you like to do?</h5>
   <div class="grid-container mt-4">
-    <div class="grid-item bg-blue-100" x-on:click="navigate('/portal/dashboard/results/')">
+    <div class="grid-item bg-blue-100" x-on:click="navigate('{% url 'print_results' %}')">
       <div class="icon-container">
         <i class="fas fa-print"></i>
       </div>
       <span>Print Results</span>
     </div>
-    <div class="grid-item bg-pink-100">
+    <div class="grid-item bg-pink-100" x-on:click="navigate('{% url 'my_courses' %}')">
       <div class="icon-container">
         <i class="fas fa-graduation-cap"></i>
       </div>
       <span>My Courses</span>
     </div>
-    <div class="grid-item bg-green-100">
+    <div class="grid-item bg-green-100" x-on:click="navigate('{% url 'my_profile' %}')">
       <div class="icon-container">
         <i class="fas fa-school"></i>
       </div>
-      <span>My School Info</span>
+      <span>My Profile</span>
     </div>
     <div class="grid-item bg-yellow-100">
       <div class="icon-container">

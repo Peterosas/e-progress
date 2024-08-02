@@ -2,12 +2,12 @@
  {% load static %}
  <ul class="nav flex-column cs-sidebar">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Results</a>
+    <a :class="isActivePage('results') ? 'nav-link active' : 'nav-link'" aria-current="page" href="{% url 'print_results' %}">Results</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">My Courses</a>
+    <a :class="isActivePage('my-courses') ? 'nav-link active' : 'nav-link'" href="{% url 'my_courses' %}">My Courses</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">School Info</a>
+    <a :class="isActivePage('my-profile') ? 'nav-link active' : 'nav-link'" href="{% url 'my_profile' %}">My Profile</a>
   </li>
 </ul>

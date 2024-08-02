@@ -17,7 +17,7 @@
     <form 
       class="mt-4" action="/portal/overview/" 
       x-data="{ loading: false }"  
-      @submit.prevent="loading = true; setTimeout(() => { loading = false; location.href='/portal/dashboard/overview/' }, 3000)"
+      @submit.prevent="loading = true; setTimeout(() => { loading = false; navigate('{% url 'dashboard_overview' %}') }, 3000)"
     >
       <div class="form-group">
         <label for="token">Enter your student token:</label>
