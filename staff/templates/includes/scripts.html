@@ -23,3 +23,26 @@
 <script src="{% static 'assets/js/soft-ui-dashboard.min.js' %}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<script>
+  function navigate(url, replace = false) {
+    if (replace) {
+      location.replace(url);
+    }
+    else {
+      location.href = url;
+    }
+  }
+
+  const spinner = document.createElement('div');
+  spinner.className = 'spinner';
+  document.body.appendChild(spinner);
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      spinner.style.display = 'none';
+    }, 1000)
+    document.body.classList.add('loaded');
+  });
+
+</script>
